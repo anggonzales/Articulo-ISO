@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+
+
+
+
+\begin{document}
+\title{ISO/IEC 9075:2008}
+\author{Angel Gonzales Cave}
+\date {14 de agosto del 2019}
+\maketitle
+
+\begin{abstract}
+En el presente artículo se explica las nuevas caracteristicas de la revision SQL:2008 para la estándar ISO para el lenguaje de consulta de la base de datos SQL, las características son  explicadas de forma sencilla y dando un ejemplo cuando es útil implementarlas en un ambiente real.
+\end{abstract}
+\begin{abstract}
+This article explains the new features of the SQL revision: 2008 for the ISO standard for the query language of the SQL database, the characteristics are explained in a simple way and giving an example when it is useful to implement them in a real environment .
+\end{abstract}
+\section{Introducción}
+Son muchas las revisiones que se publican para el estándar ISO para el lenguaje de bases de datos SQL. En este artículo se tratará sobre la revisión SQL:2008 donde se dará a conocer las nuevas funciones o caracterísiticas que trae la revisión en mención. Las funciones estarán enteramente descritas explicando los beneficios y en que casos podemos hacer empleo de las funciones.
+\section{Marco Teórico}
+\begin{itemize}
+\item SQL(Lenguaje de Consulta Estructurada) es un lenguaje de programación estándar e interactivo para la obtención de información desde una base de datos y para actualizarla.
+\item Script es un programa, o sea un conjunto de comandos, que se le da a un motor SQL para decirle lo que debe hacer y en que orden debe hacerlo.
+\item Tabla se refiere al tipo de modelado de datos donde se guardan los datos recogidos por un programa.
+\item Servidor un servidor basado en software es un programa que ofrece un servicio especial que otros programas denominados clientes pueden usar a nivel local o a través de una red.
+\end{itemize}
+\section{Análisis}
+Las nuevas funciones son :
+\begin{itemize}
+\item Mejora de la instrucción MERGE siendo esta instrucción la que utilizamos para lo que habitualmente hacemos al digitar nuestros scripts por ejemplo (Insert, Update o Delete), en donde tendriamos que hacer tres querys y por lo tanto realizar tres consultas provocando un uso mayor de los recursos del servidor. Con MERGE nos permite hacer todo esto en una sola consulta, lo que es mucho más eficiente y además se hará menor uso de los recursos del servidor.
+\item TRUNCATE TABLE este comando se utiliza para eliminar o borrar los registros que se encuentren almacenados en una tabla. Este comando es util cuando se trabaja con tablas con registros temporales que no requieren ser almacenados en una tabla durante un largo periodo de tiempo.
+\item Los triggers son disparadores los cuales nos ayuda a mantener la integridad de los datos mediante alertas que pueden implementarse en diferentes eventos.
+\end{itemize}
+\section{Conclusiones}
+El uso de la instrucciión MERGE favorece en la optimización de la base de datos , donde los resultados se verán al realizar consultas en menor tiempo y haciendo menor uso de los recursos del servidor.
+El comando TRUNCATE TABLE , este comando deja vacía una tabla , pero la tabla se mantiene ; es útil en tablas con registros temporales que no requieren ser almacenados por mucho tiempo.
+\begin{thebibliography}{}
+\bibitem {}
+\newblock en.wikipedia.org/wiki/SQL:2008
+\bibitem {}
+\newblock en.wikipedia.org/wiki/Merge(SQL)
+\bibitem {}
+\newblock sql.11sql.com/sql-truncate.html
+\end{thebibliography}
+
+
+\end{document}
