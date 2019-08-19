@@ -38,7 +38,7 @@
 
 \begin{document}
 
-\title{ISO/IEC 9075:2008}
+\title{ISO/IEC 9075:2008 standard of 2008}
 \author{Angel Gonzales Cave}
 \date {14 de agosto del 2019}
 \maketitle
@@ -71,6 +71,7 @@ El efecto que se quiere lograr es que en una sola sentencia se puedan realizar v
 \item Insertar datos
 \item Eliminar datos
 \end{itemize}
+
 \item TRUNCATE TABLE este comando se utiliza para eliminar o borrar los registros que se encuentren almacenados en una tabla. Este comando es util cuando se trabaja con tablas con registros temporales que no requieren ser almacenados en una tabla durante un largo periodo de tiempo.
 Sentencia TRUNCATE TABLE :
 
@@ -78,11 +79,22 @@ Sentencia TRUNCATE TABLE :
 \includegraphics[width=7cm]{./Imagenes/01} 
 \end{center}
 \item Los triggers son disparadores los cuales nos ayuda a mantener la integridad de los datos mediante alertas que pueden implementarse en diferentes eventos.
+ 
+Un INSTEAD OF trigger es un disparador que le permite saltar de una INSERT, DELETE o UPDATE comunicado a una tabla o una vista y ejecutar otros estados definidos en el gatillo en su lugar.
+
+Un ejemplo típico de uso de un INSTEAD OF trigger es anular una operación de inserción, actualización o eliminación en una vista.
+
+\begin{center}
+\includegraphics[width=7cm]{./Imagenes/02} 
+\end{center}
+
 \end{itemize}
 \section{Conclusiones}
 El uso de la instrucciión MERGE favorece en la optimización de la base de datos , donde los resultados se verán al realizar consultas en menor tiempo y haciendo menor uso de los recursos del servidor.
 
 El comando TRUNCATE TABLE , este comando deja vacía una tabla , pero la tabla se mantiene ; es útil en tablas con registros temporales que no requieren ser almacenados por mucho tiempo.
+
+Un INSTEAD OF trigger nos envia alertas omitiendo instrucciones DML y ejecutando otras instrucciones que estén definidas en la sentencia.
 
 \begin{thebibliography}{}
 \bibitem {}
